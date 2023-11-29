@@ -1,0 +1,136 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*BAGIAN NAVBAR*/
+.navbar{
+    background: #ffff;
+    height: 75px;
+    display: flex;  
+    padding: 0 10%;
+    align-items:center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(1, 1, 1,0.1);
+}
+
+.navbar > h1{
+    font-size: 38px;
+    color: #45BA65;
+    font-weight: bolder;
+}
+
+nav ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+ }
+
+ nav ul li {
+    float: left;
+ }
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transition: 0.5s ease;
+ }
+ 
+ nav ul li a {
+    color: #252525;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+ }
+
+a{
+    text-decoration: none;
+    color: #252525;
+}
+
+ a:hover{
+    color: #45BA65;
+    transition: 0.3 s;
+ }
+ 
+
+/*Buku*/
+.judul-buku{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px 0;
+}
+
+.buku-content-container{
+    min-height: 400px;
+    margin: 50px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.buku-content-container .card{
+    height: 100%;
+}
+
+.card-all{
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(1, 1, 1,0.2);
+}
+
+.card-all > img{
+    border-top-right-radius:15px;
+    border-top-left-radius:15px; 
+    object-fit: cover;
+    height: 580px;
+    width: 100%;
+}
+
+.card-all > .card-buku{
+    padding: 20px;   
+}
+
+.card-all h3{
+    font-size: 20px;
+    margin: 0 15px 0 0;
+}
+
+.card-buku{
+    line-height: 30px;
+}
+
+.card-buku > p{
+    line-height: 20px;
+    color: #5A5A5A; 
+    font-size: 14px;
+}
+
+.card-all:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+/*FOOTER*/
+.footer-final{
+    margin-top: 100px;
+    height: 80px;
+    display: flex;  
+    padding: 0 10%;
+    align-items:center;
+    justify-content: space-between;
+    background: #e2e2e2;
+}
+
+footer > div{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
